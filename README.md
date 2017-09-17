@@ -17,8 +17,14 @@ See [`air_test.go`](air_test.go) for example code (the unit tests).
 
 To run the unit tests, simply run `go test` from the project root.
 
+# Notes
+
+-   Related library that may be a useful complement: https://github.com/dagoof/failure
+
 # To-dos
 
 -   Perhaps add some runtime information to each added error message (such as source code location, or current function name).
 -   Maybe figure out some way to call air.Roar once per function (perhaps using defer and a named error return value), since
     it's likely that the added message will be the same for each function.
+-   Add more realistic test cases, showing deeply nested error messages, printing error messages nicely.
+
